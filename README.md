@@ -7,4 +7,4 @@ Pigeon uses your phone's data connection (WiFi/3G/4G) to communicate securely.
 
 Currently available on the Play store.
 
-<img src="https://github.com/codeboy34/Pigeon-Android/blob/master/download.png"/>
+<a href="google.com"> <img src="https://github.com/codeboy34/Pigeon-Android/blob/master/download.png"/></a>
