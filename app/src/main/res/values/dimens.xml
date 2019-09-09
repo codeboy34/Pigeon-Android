@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="chat_control_height">52dp</dimen>
+    <dimen name="margin12">12dp</dimen>
+    <dimen name="padding8">8dp</dimen>
+    <dimen name="blink_size">8dp</dimen>
+    <dimen name="min_keyboard_size">50dp</dimen>
+    <dimen name="min_custom_keyboard_size">110dp</dimen>
+    <dimen name="default_custom_keyboard_size">220dp</dimen>
+    <dimen name="min_custom_keyboard_top_margin">170dp</dimen>
+    <dimen name="btn_min_height">48dp</dimen>
+    <dimen name="chat_app_height">103dp</dimen>
+    <dimen name="media_grid_spacing">4dp</dimen>
+    <dimen name="album_item_height">72dp</dimen>
+    <dimen name="media_grid_size">48dp</dimen>
+    <dimen name="chat_date_size">15sp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="item_contact_header_height">30dp</dimen>
+    <dimen name="item_contact_height">60dp</dimen>
+    <dimen name="avatar_text_size">22sp</dimen>
+    <dimen name="margin_start">16dp</dimen>
+    <dimen name="call_button_size">74dp</dimen>
+    <dimen name="margin16">16dp</dimen>
+</resources>

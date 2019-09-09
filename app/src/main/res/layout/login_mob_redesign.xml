@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+    <com.pigeonmessenger.customviews.CustomEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/numberEdittext"
+        app:max_word="10"
+        app:input_type="number"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:icon="@drawable/ic_mobile"
+        app:hint="Phone number">
+
+    </com.pigeonmessenger.customviews.CustomEditText>
+
+    <com.pigeonmessenger.customviews.CustomButton
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:clickable="false"
+        android:background="@drawable/button_stroke"
+        android:textColor="#000"
+        android:id="@+id/numberButton"
+        android:elevation="0dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingEnd="40dp"
+        android:paddingStart="40dp"
+        android:gravity="center"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_marginTop="30dp"
+        android:text="REGISTER"/>
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="menu_transfer" type="id" />
+    <item name="menu_voice" type="id" />
+    <item name="menu_camera" type="id" />
+    <item name="menu_gallery" type="id" />
+    <item name="menu_document" type="id" />
+    <item name="menu_contact" type="id" />
+    <item name="action_tv" type="id"/>
+    <item name="name_tv" type="id"/>
+    <item name="avatar" type="id"/>
+</resources>

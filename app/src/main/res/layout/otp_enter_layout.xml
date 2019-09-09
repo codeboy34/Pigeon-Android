@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OTP has been sent to"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="8094772915"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/phoneNumberTextview"
+        android:gravity="center"/>
+
+
+    <com.pigeonmessenger.customviews.CustomEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/otpEdittext"
+        app:max_word="6"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:input_type="number"
+        app:icon="@drawable/ic_lock"
+        app:hint="OTP">
+
+    </com.pigeonmessenger.customviews.CustomEditText>
+
+    <com.pigeonmessenger.customviews.CustomButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:background="@drawable/button_stroke"
+        android:textColor="#000"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:id="@+id/otpButton"
+        android:elevation="0dp"
+        android:layout_gravity="center"
+        style="?android:attr/borderlessButtonStyle"
+        android:textCursorDrawable="@drawable/edittext_cursor_drawable"
+        android:layout_marginTop="30dp"
+        android:text="REGISTER"/>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp">
+
+        <com.pigeonmessenger.customviews.OTPCountDownView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/countDownTimer"
+            android:textColor="@color/otp_resend_timer"
+            android:text="Resend code 00:13"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wrong number?"
+            android:layout_gravity="end"
+            android:id="@+id/changeNumber"
+            android:textColor="@color/wrong_no_textview"/>
+
+    </FrameLayout>
+</LinearLayout>

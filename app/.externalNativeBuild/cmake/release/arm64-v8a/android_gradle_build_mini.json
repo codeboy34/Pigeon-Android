@@ -1,0 +1,31 @@
+{
+  "buildFiles": [
+    "E:\\Android Official Projeccts\\pigeonnew\\app\\src\\main\\cpp\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "D:\\Android\\sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build \"E:\\Android Official Projeccts\\pigeonnew\\app\\.externalNativeBuild\\cmake\\release\\arm64-v8a\" --target clean"
+  ],
+  "libraries": {
+    "lib_opusenc-Release-arm64-v8a": {
+      "artifactName": "lib_opusenc",
+      "abi": "arm64-v8a",
+      "output": "E:\\Android Official Projeccts\\pigeonnew\\app\\src\\main\\cpp\\opus\\lib\\arm64-v8a\\libopusenc.a"
+    },
+    "lib_ogg-Release-arm64-v8a": {
+      "artifactName": "lib_ogg",
+      "abi": "arm64-v8a",
+      "output": "E:\\Android Official Projeccts\\pigeonnew\\app\\src\\main\\cpp\\opus\\lib\\arm64-v8a\\libogg.a"
+    },
+    "mixin-Release-arm64-v8a": {
+      "artifactName": "mixin",
+      "buildCommand": "D:\\Android\\sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build \"E:\\Android Official Projeccts\\pigeonnew\\app\\.externalNativeBuild\\cmake\\release\\arm64-v8a\" --target mixin",
+      "abi": "arm64-v8a",
+      "output": "E:\\Android Official Projeccts\\pigeonnew\\app\\build\\intermediates\\cmake\\release\\obj\\arm64-v8a\\libmixin.so"
+    },
+    "lib_opus-Release-arm64-v8a": {
+      "artifactName": "lib_opus",
+      "abi": "arm64-v8a",
+      "output": "E:\\Android Official Projeccts\\pigeonnew\\app\\src\\main\\cpp\\opus\\lib\\arm64-v8a\\libopus.a"
+    }
+  }
+}

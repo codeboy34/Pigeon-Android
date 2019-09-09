@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".fragment.settings.ChatSettingFragment">
+
+    <com.pigeonmessenger.widget.CardTitleView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleView"
+        app:card_title="@string/chat_setting"
+        app:card_title_elevation="3dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:fontFamily="@font/sf_pro_light"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:id="@+id/backup"
+        android:paddingEnd="16dp"
+        android:text="@string/chat_backup"
+        android:textColor="@color/black"
+        android:background="@drawable/setting_back"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="28dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:fontFamily="@font/sf_pro_light"
+            android:text="@string/enter_key_is_send"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Switch
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:checked="true"
+            android:trackTint="@color/black"
+            android:focusable="true" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/sf_pro_light"
+        android:gravity="center_vertical"
+        android:text="@string/auto_download_media_mobile"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <com.pigeonmessenger.fragment.settings.SubSettingItem
+        android:id="@+id/img_down_mb"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        app:sub_setting_title="@string/images" />
+
+    <com.pigeonmessenger.fragment.settings.SubSettingItem
+        android:id="@+id/audio_down_mb"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        app:sub_setting_title="@string/audio" />
+
+
+    <com.pigeonmessenger.fragment.settings.SubSettingItem
+        android:id="@+id/file_down_mb"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        app:sub_setting_title="@string/Files" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/sf_pro_light"
+        android:gravity="center_vertical"
+        android:text="@string/auto_download_media_wifi"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <com.pigeonmessenger.fragment.settings.SubSettingItem
+        android:id="@+id/img_down_wifi"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        app:sub_setting_title="@string/images" />
+
+    <com.pigeonmessenger.fragment.settings.SubSettingItem
+        android:id="@+id/audio_down_wifi"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        app:sub_setting_title="@string/audio" />
+
+
+    <com.pigeonmessenger.fragment.settings.SubSettingItem
+        android:id="@+id/file_down_wifi"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        app:sub_setting_title="@string/Files" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:fontFamily="@font/sf_pro_light"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textStyle="bold"
+        android:id="@+id/clear_chat"
+        android:background="@drawable/setting_back"
+        android:text="@string/clear_all_chat"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:fontFamily="@font/sf_pro_light"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:id="@+id/delete_chat"
+        android:textStyle="bold"
+        android:paddingEnd="16dp"
+        android:text="@string/delete_all_chat"
+        android:background="@drawable/setting_back"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+</LinearLayout>

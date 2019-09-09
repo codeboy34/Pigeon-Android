@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/photos"
+        android:title="@string/Photos"
+        android:icon="@drawable/ic_reg_gallery"/>
+    <item
+        android:id="@+id/videos"
+        android:title="@string/Videos"
+        android:icon="@drawable/ic_reg_movies"/>
+    <item
+        android:id="@+id/files"
+        android:title="@string/Files"
+        android:icon="@drawable/ic_reg_document"/>
+</menu>

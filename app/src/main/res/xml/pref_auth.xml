@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+        <CheckBoxPreference
+            android:key="pref_sync"
+            android:title="Sync Contacts"
+            android:summary="sync local contact with pigeon"
+            android:defaultValue="true" />
+    </PreferenceScreen>
+</PreferenceScreen>

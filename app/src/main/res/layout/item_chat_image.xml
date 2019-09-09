@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/chat_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="1.5dp">
+
+        <TextView
+            android:id="@+id/chat_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:ellipsize="end"
+            android:gravity="start|top"
+            android:lines="1"
+            android:maxWidth="280dp"
+            android:paddingBottom="4dp"
+            android:textColor="#19BEF1"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/chat_image_layout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Prem jangir" />
+
+        <com.pigeonmessenger.widget.ShadowLayout
+            android:id="@+id/chat_image_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/chat_name"
+            app:layout_goneMarginTop="0dp">
+
+            <com.pigeonmessenger.widget.PorterShapeImageView
+                android:id="@+id/chat_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/chat_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:drawablePadding="3dp"
+                android:fontFamily="@font/sf_pro_light"
+                android:gravity="end|bottom"
+                android:textColor="@color/white"
+                android:textSize="@dimen/chat_date_size"
+                android:paddingEnd="8dp"
+                android:paddingStart="0dp"
+                android:paddingBottom="8dp"
+                tools:text="7:48AM" />
+        </com.pigeonmessenger.widget.ShadowLayout>
+
+        <com.pigeonmessenger.widget.CircleProgress
+            android:id="@+id/progress"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            app:layout_constraintBottom_toBottomOf="@id/chat_image_layout"
+            app:layout_constraintEnd_toEndOf="@id/chat_image_layout"
+            app:layout_constraintStart_toStartOf="@id/chat_image_layout"
+            app:layout_constraintTop_toTopOf="@id/chat_image_layout"
+            app:progressColor="@color/colorDarkBlue"
+            app:progressWidth="1.5dp"
+            app:shadowColor="@color/progress_gary"
+            app:size="40dp" />
+
+        <LinearLayout
+            android:id="@+id/chat_warning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@id/chat_image_layout"
+            app:layout_constraintEnd_toEndOf="@id/chat_image_layout"
+            app:layout_constraintStart_toStartOf="@id/chat_image_layout"
+            app:layout_constraintTop_toTopOf="@id/chat_image_layout">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_expired" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="@string/chat_expired"
+                android:textColor="@color/text_white" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

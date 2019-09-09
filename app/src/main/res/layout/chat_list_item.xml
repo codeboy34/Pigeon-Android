@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:background="?android:selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="16dp"
+        android:id="@+id/songIndicator"
+        android:layout_marginEnd="16dp">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/avatar_one"
+            android:layout_gravity="center"
+            android:id="@+id/thumbnail" />
+
+        <ImageView
+            android:layout_width="56dp"
+            android:id="@+id/playing_indicator_circle"
+            android:layout_height="56dp">
+
+        </ImageView>
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:paddingTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:maxLines="1"
+            android:textColor="#4a4a4a"
+            android:text="Prem jangir"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:id="@+id/title"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:maxLines="1"
+            android:textColor="@color/text_color_chatlist_message"
+            android:text="Hey bro ! How's going ? Last met was awesome"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:id="@+id/subtitle"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/ic_ack"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:textColor="@color/text_color_chatlist_time"
+                android:text="04:55"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:id="@+id/duration"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="18dp"
+            android:background="@color/chatlist_divider"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="20dp"
+        android:id="@+id/popUpButton"
+        android:layout_gravity="center">
+
+        <FrameLayout
+            android:layout_width="30dp"
+            android:layout_height="24dp"
+            android:background="@drawable/chat_list_msg_counter_drawable">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="13sp"
+                android:textColor="#fff"
+                android:text="4"/>
+        </FrameLayout>
+    </FrameLayout>
+
+
+
+</LinearLayout>

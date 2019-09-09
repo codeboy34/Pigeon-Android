@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/call_cl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/call_bg"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <FrameLayout
+        android:id="@+id/full_surface_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/side_surface_holder"
+        android:layout_width="90dp"
+        android:layout_height="110dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone"
+        android:elevation="4dp"
+        app:layout_constraintBottom_toTopOf="@id/video_cb"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    </FrameLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <TextView
+        android:id="@+id/action_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toTopOf="@+id/hangup_cb"
+        app:layout_constraintEnd_toEndOf="@id/guideline_end"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/guideline_start"
+        app:layout_constraintTop_toBottomOf="@+id/name_tv"
+        app:layout_constraintVertical_bias="0.87" />
+
+    <TextView
+        android:id="@+id/name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@id/guideline_end"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="@id/guideline_start"
+        app:layout_constraintTop_toBottomOf="@+id/avatar_iv" />
+
+    <LinearLayout
+        android:id="@+id/call_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1E000000"
+        android:orientation="horizontal"
+        android:paddingStart="20dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="8dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/guideline_end"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/guideline_start"
+        app:layout_constraintTop_toBottomOf="@id/guideline_top">
+
+        <com.pigeonmessenger.widget.PigeonCircleImageView
+            android:id="@+id/avatar_small"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/caller_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="@string/app_name"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/caller_action_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="03:55"
+                android:textColor="@color/text_gray" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.pigeonmessenger.widget.PigeonCircleImageView
+        android:id="@id/avatar_iv"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.pigeonmessenger.widget.CallButton
+        android:id="@+id/voice_cb"
+        android:layout_width="@dimen/call_button_size"
+        android:layout_height="wrap_content"
+        android:checkable="true"
+        android:checked="false"
+        android:text="@string/call_speaker"
+        android:visibility="invisible"
+        app:bg_circle_checked="@drawable/bg_call_btn_checked"
+        app:bg_circle_unchecked="@drawable/bg_call_btn_unchecked"
+        app:ic_checked="@drawable/ic_volume_up_checked"
+        app:ic_unchecked="@drawable/ic_volume_up"
+        app:layout_constraintBottom_toTopOf="@id/guideline_bottom"
+        app:layout_constraintEnd_toEndOf="@id/guideline_end"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/guideline_start"
+        tools:ignore="ContentDescription" />
+
+
+    <com.pigeonmessenger.widget.CallButton
+        android:id="@+id/video_cb"
+        android:layout_width="@dimen/call_button_size"
+        android:layout_height="wrap_content"
+        android:checkable="true"
+        android:checked="false"
+        android:text="@string/call_flip_camera"
+        android:visibility="invisible"
+        app:bg_circle_checked="@drawable/bg_call_btn_unchecked"
+        app:bg_circle_unchecked="@drawable/bg_call_btn_unchecked"
+        app:ic_checked="@drawable/ic_camera_turn"
+        app:ic_unchecked="@drawable/ic_camera_turn"
+        app:layout_constraintBottom_toTopOf="@id/guideline_bottom"
+        app:layout_constraintEnd_toEndOf="@id/guideline_end"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/guideline_start"
+        tools:ignore="ContentDescription" />
+
+    <com.pigeonmessenger.widget.CallButton
+        android:id="@+id/mute_cb"
+        android:layout_width="@dimen/call_button_size"
+        android:layout_height="wrap_content"
+        android:checkable="true"
+        android:checked="false"
+        android:text="@string/call_mute"
+        android:visibility="invisible"
+        app:bg_circle_checked="@drawable/bg_call_btn_checked"
+        app:bg_circle_unchecked="@drawable/bg_call_btn_unchecked"
+        app:ic_checked="@drawable/ic_mic_off_checked_48dp"
+        app:ic_unchecked="@drawable/ic_mic_off_unchecked_48dp"
+        app:layout_constraintBottom_toTopOf="@id/guideline_bottom"
+        app:layout_constraintEnd_toEndOf="@id/guideline_end"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/guideline_start"
+        tools:ignore="ContentDescription" />
+
+    <com.pigeonmessenger.widget.CallButton
+        android:id="@+id/hangup_cb"
+        android:layout_width="@dimen/call_button_size"
+        android:layout_height="100dp"
+        android:text="@string/call_hang_up"
+        app:bg_circle_checked="@drawable/bg_call_hangup"
+        app:ic_checked="@drawable/ic_call_end_white_48dp"
+        app:layout_constraintBottom_toTopOf="@id/guideline_bottom"
+        app:layout_constraintEnd_toEndOf="@id/guideline_end"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@id/guideline_start"
+        tools:ignore="ContentDescription" />
+
+    <com.pigeonmessenger.widget.CallButton
+        android:id="@+id/answer_cb"
+        android:layout_width="@dimen/call_button_size"
+        android:layout_height="100dp"
+        android:text="@string/call_accept"
+        android:visibility="invisible"
+        app:bg_circle_checked="@drawable/bg_call_answer"
+        app:ic_checked="@drawable/ic_call_white_48dp"
+        app:layout_constraintBottom_toTopOf="@id/guideline_bottom"
+        app:layout_constraintEnd_toEndOf="@id/guideline_end"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/guideline_start"
+        tools:ignore="ContentDescription" />
+</androidx.constraintlayout.widget.ConstraintLayout>

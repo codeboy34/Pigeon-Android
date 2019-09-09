@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <com.pigeonmessenger.widget.PigeonCircleImageView
+        android:id="@+id/avatar_iv"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_centerVertical="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/avatar_iv">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:maxWidth="220dp"
+            android:text="Prem jangir"
+            android:fontFamily="@font/roboto"
+            android:singleLine="true"
+            android:textColor="@color/text_black"
+            android:textSize="17sp"/>
+
+        <ImageView
+            android:id="@+id/verified_iv"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="8dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_user_verified"
+            android:visibility="gone"
+            tools:ignore="ContentDescription"/>
+
+        <ImageView
+            android:id="@+id/mute_iv"
+            android:layout_width="11dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_mute"
+            tools:ignore="ContentDescription" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin12"
+        android:layout_marginStart="8dp"
+        android:text="02:44"
+        android:layout_marginBottom="6dp"
+        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+        android:textColor="?android:attr/textColorSecondary"
+        android:textSize="12sp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin12"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/group_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="3dp"
+            android:layout_gravity="center_vertical"
+            android:ellipsize="middle"
+            android:maxWidth="120dp"
+            android:singleLine="true"
+            android:textColor="?android:attr/textColorSecondary"
+            android:textSize="16sp"
+            android:visibility="visible"/>
+
+        <ImageView
+            android:id="@+id/msg_flag"
+            android:layout_width="17dp"
+            android:layout_height="14dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="3dp"
+            android:contentDescription="@null"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/msg_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:text="@string/messages_are_end_to_end_encrypted"
+            android:layout_gravity="center_vertical"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+            android:textColor="?android:attr/textColorSecondary"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:id="@+id/msg_pin"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="8dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_pin_status"
+            android:visibility="gone"
+            android:contentDescription="@null"/>
+
+        <TextView
+            android:id="@+id/unread_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/bg_unread"
+            android:textColor="@color/white"
+            android:text="5"
+            android:fontFamily="monospace"
+            android:textSize="12sp"
+            android:visibility="visible"/>
+
+        <ProgressBar
+            android:id="@+id/pb"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

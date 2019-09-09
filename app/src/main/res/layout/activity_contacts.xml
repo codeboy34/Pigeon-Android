@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".activities.ContactsActivity">
+
+    <com.pigeonmessenger.widget.CardTitleView
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:id="@+id/titleView"
+        app:cardElevation="1dp"
+        android:layout_marginBottom="1dp"
+        app:card_title="@string/contacts"
+        app:cardBackgroundColor="@color/titleback_color"
+        android:layout_alignParentTop="true">
+
+    </com.pigeonmessenger.widget.CardTitleView>
+
+    <com.pigeonmessenger.widget.pulltorefresh.RecyclerRefreshLayout
+        android:id="@+id/pullToRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fafafa"
+        android:layout_below="@id/titleView"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/contacts_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </com.pigeonmessenger.widget.pulltorefresh.RecyclerRefreshLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:id="@+id/empty_layout"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_contacts_found"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/pigeonActionColor"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+</RelativeLayout>

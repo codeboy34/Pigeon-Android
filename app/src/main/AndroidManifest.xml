@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pigeonmessenger">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission
+        android:name="android.permission.AUTHENTICATE_ACCOUNTS"
+        android:maxSdkVersion="22" />
+    <uses-permission
+        android:name="android.permission.GET_ACCOUNTS"
+        android:maxSdkVersion="22" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name="com.pigeonmessenger.activities.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/launcher_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/launcher_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.pigeonmessenger.activities.LandingActivity" />
+        <activity android:name="com.pigeonmessenger.activities.InitializeActivity" />
+        <activity android:name="com.pigeonmessenger.activities.AvatarPreviewActivity" />
+        <activity android:name="com.pigeonmessenger.activities.SharedMediaActivity" />
+        <activity android:name="com.pigeonmessenger.activities.GroupInfo" />
+        <activity android:name="com.pigeonmessenger.activities.HomeActivity" />
+        <activity
+            android:name="com.pigeonmessenger.activities.ChatRoom"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.pigeonmessenger.TestActivity" />
+        <activity android:name="com.pigeonmessenger.activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.pigeonmessenger.contacts.AuthenticatorService">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/authenticator" />
+        </service>
+        <service
+            android:name="com.pigeonmessenger.contacts.ContactsSyncService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.content.SyncAdapter"
+                android:resource="@xml/sync_adapter" />
+
+            <!--
+                <meta-data
+                android:name="android.provider.CONTACTS_STRUCTURE"
+                android:resource="@xml/contacts" />
+            -->
+        </service>
+
+        <activity
+            android:name="com.pigeonmessenger.activities.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="one.mixin.android.widget.gallery.ui.GalleryActivity" />
+
+        <service android:name="com.pigeonmessenger.services.NetworkService" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name="com.pigeonmessenger.activities.ContactsActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.pigeonmessenger.activities.ContactsShareActivity" />
+        <activity android:name="com.pigeonmessenger.activities.DragMediaActivity" />
+        <activity android:name="com.pigeonmessenger.activities.UserProfileActivity" />
+        <activity
+            android:name="com.pigeonmessenger.activities.SetupAccountActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity android:name="com.pigeonmessenger.activities.ForwardActivity" />
+
+        <activity-alias
+            android:name="one.mixin.messenger.ShareActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:targetActivity="com.pigeonmessenger.activities.ForwardActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+                <data android:mimeType="video/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+                <data android:mimeType="video/*" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity android:name="com.pigeonmessenger.activities.MeActivity" />
+        <activity
+            android:name="com.pigeonmessenger.activities.AccountUpdateActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.pigeonmessenger.activities.VideoCallActivity" />
+
+        <service android:name="com.pigeonmessenger.webrtc.CallService" />
+
+        <activity
+            android:name="com.pigeonmessenger.activities.CallActivity"
+            android:screenOrientation="portrait" />
+
+        <service android:name="com.pigeonmessenger.services.SendService" />
+
+        <activity android:name="com.pigeonmessenger.activities.GroupActivity" />
+        <activity android:name="com.pigeonmessenger.activities.RestoreActivity" />
+    </application>
+
+</manifest>

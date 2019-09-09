@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mute_notification"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textSize="18sp"
+        android:fontFamily="@font/roboto"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider"/>
+
+    <com.pigeonmessenger.widget.MuteItem
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/eight_hours"
+        android:background="@drawable/setting_back"
+        android:padding="16dp"/>
+
+    <com.pigeonmessenger.widget.MuteItem
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/one_week"
+        android:background="@drawable/setting_back"
+        android:padding="16dp"/>
+
+    <com.pigeonmessenger.widget.MuteItem
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/one_year"
+        android:background="@drawable/setting_back"
+        android:padding="16dp"/>
+
+    <com.pigeonmessenger.widget.MuteItem
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/forever"
+        android:background="@drawable/setting_back"
+        android:padding="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/mute"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="8dp"
+        android:id="@+id/mute_button"
+        android:background="@drawable/mute_button_back"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="20dp"/>
+</LinearLayout>

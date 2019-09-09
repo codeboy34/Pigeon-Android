@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.pigeonmessenger.widget.CardTitleView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:card_title="@string/me"
+        android:id="@+id/titleView"
+        app:card_title_elevation="3dp" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_gray"
+        android:orientation="vertical"
+        tools:context=".fragment.settings.MeFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:paddingTop="0dp">
+
+                <FrameLayout
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="2dp">
+
+                    <com.pigeonmessenger.widget.PigeonCircleImageView
+                        android:id="@+id/avatar_iv"
+                        android:layout_width="148dp"
+                        android:layout_height="148dp"
+                        android:layout_gravity="center"
+                        app:border_width="1dp"
+                        app:border_color="@color/colorGray"
+                        android:src="@drawable/avatar_contact"
+                        android:visibility="visible" />
+
+                    <com.pnikosis.materialishprogress.ProgressWheel
+                        android:id="@+id/avatar_pg"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:visibility="gone"
+                        app:matProg_barColor="@color/pigeonActionColor"
+                        app:progress="@color/pigeonActionColor" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/mixin_condensed"
+                    android:padding="4dp"
+                    android:text="Prem jangir"
+                    android:textColor="@color/black"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/bio_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="@font/mixin_condensed"
+                    android:lineSpacingExtra="5dp"
+                    android:padding="2dp"
+                    android:text="@string/user_bio_dummy"
+                    android:textAlignment="center"
+                    android:textColor="@color/black_80"
+                    android:textSize="15sp" />
+
+
+                <TextView
+                    android:id="@+id/add_bio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/add_bio_back"
+                    android:padding="4dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:text="@string/add_bio"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:background="@color/bg_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mixin_condensed"
+                    android:text="Mobile"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/mob_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/sf_pro_light"
+                    android:text="+918949501678"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:background="@color/bg_gray" />
+
+            <com.pigeonmessenger.widget.SettingItem
+                android:id="@+id/account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                app:setting_icon="@drawable/ic_reg_group"
+                app:setting_title="@string/account" />
+
+            <com.pigeonmessenger.widget.SettingItem
+                android:id="@+id/chat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                app:setting_icon="@drawable/ic_reg_chat"
+                app:setting_title="@string/chat" />
+
+
+            <com.pigeonmessenger.widget.SettingItem
+                android:id="@+id/notification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                app:setting_icon="@drawable/ic_reg_notifications"
+                app:setting_title="@string/notification" />
+
+
+            <com.pigeonmessenger.widget.SettingItem
+                android:id="@+id/help"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                app:setting_icon="@drawable/ic_reg_help"
+                app:setting_title="@string/help" />
+
+
+            <com.pigeonmessenger.widget.SettingItem
+                android:id="@+id/about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                app:setting_icon="@drawable/ic_reg_info"
+                app:setting_title="@string/about" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

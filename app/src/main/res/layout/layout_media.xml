@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_marginBottom="16dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            app:civ_border_color="@color/gray_50"
+            app:civ_border_width="1dp"
+            android:id="@+id/media_camera"
+            android:src="@drawable/ic_reg_camera"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto"
+            android:textSize="12sp"
+            android:text="@string/camera"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            app:civ_border_color="@color/gray_50"
+            app:civ_border_width="1dp"
+            android:tint="@color/black"
+            android:id="@+id/media_gallery"
+            android:src="@drawable/ic_reg_gallery"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto"
+            android:textSize="12sp"
+            android:text="@string/gallery"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            app:civ_border_color="@color/gray_50"
+            app:civ_border_width="1dp"
+            android:id="@+id/media_files"
+            android:src="@drawable/ic_reg_document"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto"
+            android:textSize="12sp"
+            android:text="@string/Files"/>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fff</color>
+    <color name="colorPrimaryDark">#ffff</color>
+    <color name="colorAccent">#ffff</color>
+    <color name="black">#000</color>
+    <color name="divider_two">#ccc</color>
+    <color name="white">#fff</color>
+    <color name="pigeonActionColor">#673AB7</color>
+    <color name="pigeonActionColorDark">#7B1FA2</color>
+    <color name="registerButtonStrokeColor">#999</color>
+
+    <color name="register_button_normal">#43c5a5</color>
+    <color name="register_button_clicked">#44a38b</color>
+    <color name="color_edittext_cursor">#44a38b</color>
+
+    <color name="otp_resend">#43c5a5</color>
+    <color name="otp_resend_timer">#999</color>
+    <color name="wrong_no_textview">#999</color>
+    <color name="tab_icon_fill_color">#5243c5a5</color>
+    <color name="text_color_chatlist_message">#9a9a9a</color>
+    <color name="text_color_chatlist_time">#4a4a4a</color>
+    <color name="chatlist_divider">#f8f8f8</color>
+    <color name="bottom_tab_shadow">#eee</color>
+    <color name="main_gradient_color_start">#a37cf9</color>
+    <color name="main_gradient_color_end">#673AB7</color>
+    <color name="typing_indicator">#B39DDB</color>
+    <color name="in_msg_back_color">#efefef</color>
+    <color name="white60">#b9ffffff</color>
+    <color name="divider">#ECECEC</color>
+    <color name="group_circle_stroke">#e6e6e6</color>
+    <color name="chat_control_et_stroke">#000000</color>
+    <color name="colorDarkBlue">#1987FF</color>
+    <color name="color_gray">#D6D6D6</color>
+    <color name="color_blink">#FF5E5E</color>
+    <color name="colorBlue">#19C2FD</color>
+    <color name="colorRed">#E55541</color>
+    <color name="text_gray">#9B9B9B</color>
+    <color name="bubble_status_color">#a9b8c7</color>
+    <color name="colorGray">#9B9B9B</color>
+    <color name="button_blue_highlighted">#2CC3FA</color>
+    <color name="button_blue">#0D94FC</color>
+    <color name="gray_50">#88888888</color>
+    <color name="text_light_gray">#C5C5C7</color>
+    <color name="bg_gray">#F5F5F5</color>
+    <color name="call_btn_bg_unchecked">#80FFFFFF</color>
+    <color name="dotRed">#FF001F</color>
+    <color name="dotRedLight">#FF4F62</color>
+
+    <color name="black_50">#88000000</color>
+    <color name="color_record_circle_bg">#EE1987FF</color>
+    <color name="avatar_place_holder">#efefef</color>
+    <color name="text_black">#202020</color>
+    <color name="progress_gary">#F2F2F6</color>
+    <color name="color_chat_date">#ff7799A9</color>
+    <color name="text_white">#EFEFF4</color>
+
+    <color name="refresh_view_color">#ccc</color>
+    <color name="transparent_white">#CCFFFFFF</color>
+    <color name="text_default">#767676</color>
+    <color name="black_80">#d0000000</color>
+    <color name="gray_light">#757575</color>
+    <color name="call_bg">#353655</color>
+    <color name="call_btn_checked">@color/white</color>
+    <color name="call_gray">#595959</color>
+    <color name="call_red">#e7575c</color>
+    <color name="call_green">#46d23c</color>
+    <color name="titleback_color">#fafafa</color>
+    <color name="title_bar_color">#fafafa</color>
+    <color name="color_violet">#673AB7</color>
+    <color name="color_info_adapter">#f1f2f3</color>
+    <color name="text_color_info_adapter">#7e919b</color>
+    <color name="search_highlight">#673AB7</color>
+
+    <!--Sweet Alert Dialog-->
+    <color name="float_transparent">#00000000</color>
+    <color name="sweet_dialog_bg_color">#FFFFFF</color>
+    <color name="button_text_color">#FFFFFF</color>
+    <color name="gray_btn_bg_color">#D0D0D0</color>
+    <color name="gray_btn_bg_pressed_color">#B6B6B6</color>
+    <color name="blue_btn_bg_color">#ADE4FF</color>
+    <color name="blue_btn_bg_pressed_color">#96BFD2</color>
+    <color name="red_btn_bg_color">#DD6B55</color>
+    <color name="red_btn_bg_pressed_color">#CD5B55</color>
+    <color name="error_stroke_color">#F27474</color>
+    <color name="success_stroke_color">#A5DC86</color>
+    <color name="trans_success_stroke_color">#33A5DC86</color>
+    <color name="warning_stroke_color">#F8BB86</color>
+    <color name="text_color">#575757</color>
+    <color name="material_blue_grey_80">#ff37474f</color>
+    <color name="material_blue_grey_90">#ff263238</color>
+    <color name="material_blue_grey_95">#ff21272b</color>
+    <color name="material_deep_teal_20">#ff80cbc4</color>
+    <color name="material_deep_teal_50">#ff009688</color>
+    <color name="test">#1D000000</color>
+    <array name="name_colors">
+        <item>#AA4848</item>
+        <item>#B0665E</item>
+        <item>#EF8A44</item>
+        <item>#A09555</item>
+        <item>#727234</item>
+        <item>#9CAD23</item>
+        <item>#AA9100</item>
+        <item>#C49B4B</item>
+        <item>#A47758</item>
+        <item>#DF694C</item>
+        <item>#D65859</item>
+        <item>#C2405A</item>
+        <item>#A75C96</item>
+        <item>#BD637C</item>
+        <item>#8F7AC5</item>
+        <item>#7983C2</item>
+        <item>#728DB8</item>
+        <item>#5977C2</item>
+        <item>#5E6DA2</item>
+        <item>#3D98D0</item>
+        <item>#5E97A1</item>
+        <item>#4EABAA</item>
+        <item>#63A082</item>
+        <item>#877C9B</item>
+        <item>#AA66C3</item>
+        <item>#BB5334</item>
+        <item>#667355</item>
+        <item>#668899</item>
+        <item>#83BE44</item>
+        <item>#BBA600</item>
+        <item>#429AB6</item>
+        <item>#75856F</item>
+        <item>#88A299</item>
+        <item>#B3798E</item>
+        <item>#447899</item>
+        <item>#D79200</item>
+        <item>#728DB8</item>
+        <item>#DD637C</item>
+        <item>#887C66</item>
+        <item>#BE6C2C</item>
+        <item>#9B6D77</item>
+        <item>#B69370</item>
+        <item>#976236</item>
+        <item>#9D77A5</item>
+        <item>#8A660E</item>
+        <item>#5E935E</item>
+        <item>#9B8484</item>
+        <item>#92B288</item>
+    </array>
+
+</resources>

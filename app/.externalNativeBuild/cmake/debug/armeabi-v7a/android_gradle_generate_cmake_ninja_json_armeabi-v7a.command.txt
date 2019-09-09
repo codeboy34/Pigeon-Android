@@ -1,0 +1,14 @@
+Executable : D:\Android\sdk\cmake\3.6.4111459\bin\cmake.exe
+arguments : 
+-HE:\Android Official Projeccts\pigeonnew\app\src\main\cpp
+-BE:\Android Official Projeccts\pigeonnew\app\.externalNativeBuild\cmake\debug\armeabi-v7a
+-DANDROID_ABI=armeabi-v7a
+-DANDROID_PLATFORM=android-21
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=E:\Android Official Projeccts\pigeonnew\app\build\intermediates\cmake\debug\obj\armeabi-v7a
+-DCMAKE_BUILD_TYPE=Debug
+-DANDROID_NDK=E:\Android\sdk\ndk-bundle
+-DCMAKE_TOOLCHAIN_FILE=E:\Android\sdk\ndk-bundle\build\cmake\android.toolchain.cmake
+-DCMAKE_MAKE_PROGRAM=D:\Android\sdk\cmake\3.6.4111459\bin\ninja.exe
+-GAndroid Gradle - Ninja
+jvmArgs : 
+

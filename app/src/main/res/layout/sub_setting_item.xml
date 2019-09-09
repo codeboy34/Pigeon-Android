@@ -1,0 +1,35 @@
+<merge android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:fontFamily="@font/sf_pro_light"
+        android:id="@+id/title_tv"
+        android:textSize="16sp"
+        android:textColor="@color/black" />
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_check"
+        android:id="@+id/check_iv"
+        android:visibility="gone"
+        android:layout_marginEnd="12dp"
+        android:tint="#000" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="12dp"
+        android:visibility="gone"
+        android:indeterminateTint="@color/pigeonActionColor"
+        android:layout_height="wrap_content" />
+
+</merge>

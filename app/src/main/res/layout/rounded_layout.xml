@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_rounded_dialog"
+    android:minWidth="240dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textSize="18sp"
+        android:id="@+id/title"
+        android:fontFamily="@font/roboto"
+        android:padding="@dimen/margin16"
+        android:textColor="@color/black"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:maxLines="1"
+        android:background="@color/divider"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Are you sure you want to block ?"
+        android:id="@+id/message"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:maxLines="1"
+        android:background="@color/divider"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CANCEL"
+            android:textColor="@color/black"
+            android:padding="16dp"
+            android:id="@+id/negative_bt"
+            android:gravity="center"
+            android:background="@drawable/setting_back"
+            android:fontFamily="@font/roboto"
+            android:textSize="16sp"/>
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divider"
+            android:id="@+id/divider"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CONFRIM"
+            android:textColor="@color/black"
+            android:padding="16dp"
+            android:gravity="center"
+            android:id="@+id/positive_bt"
+            android:background="@drawable/setting_back"
+            android:fontFamily="@font/roboto"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

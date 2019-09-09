@@ -1,0 +1,133 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="BaseTheme">
+    </style>
+
+    <style name="BaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ColoredTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorBlue</item>
+        <item name="colorPrimaryDark">@color/colorDarkBlue</item>
+        <item name="colorAccent">@color/color_violet</item>
+    </style>
+
+    <style name="TitleViewTheme">
+    <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="BottomSheet" />
+    <style name="BottomSheet.Animation">
+        <item name="android:windowEnterAnimation">@anim/dock_bottom_enter</item>
+        <item name="android:windowExitAnimation">@anim/dock_bottom_exit</item>
+    </style>
+
+    <style name="AppTheme.WhiteAccent">
+        <item name="android:indeterminateTint">@android:color/white</item>
+        <item name="android:indeterminate">true</item>
+        <item name="android:indeterminateTintMode">src_atop</item>
+    </style>
+
+    <style name="PigeonAlertDialogTheme" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="colorAccent">@color/colorDarkBlue</item>
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+
+    <style name="AppTheme.BlueAccent">
+        <item name="android:colorAccent">@color/colorBlue</item>
+    </style>
+
+    <style name="SeekBar">
+        <item name="android:splitTrack">false</item>
+        <item name="android:progressDrawable">@drawable/layer_progress</item>
+        <item name="android:thumb">@drawable/ic_seek_bar</item>
+        <item name="android:minHeight">2dp</item>
+        <item name="android:maxHeight">2dp</item>
+    </style>
+
+    <style name="TransparentDialog" parent="android:Theme.DeviceDefault.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:background">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+    <style name="DialogNoAnimation">
+        <item name="android:windowEnterAnimation">@null</item>
+        <item name="android:windowExitAnimation">@null</item>
+    </style>
+
+    <style name="Custom">
+        <item name="android:textColor">@color/text_default</item>
+    </style>
+
+    <style name="MixinAlertDialogTheme" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="colorAccent">@color/colorDarkBlue</item>
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <item name="android:background">@android:color/white</item>
+
+    </style>
+
+    <style name="PigeonDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/color_violet</item>
+    </style>
+
+
+    <style name="AppTheme.BlueProgress">
+        <item name="android:indeterminateTint">@color/pigeonActionColor</item>
+        <item name="android:indeterminate">true</item>
+        <item name="android:indeterminateTintMode">src_atop</item>
+    </style>
+
+
+    <style name="CheckBox" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="colorAccent">@color/color_violet</item>
+        <item name="android:textColorPrimary">@android:color/black</item>
+    </style>
+
+    <style name="ProgressTheme" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="colorAccent">@color/colorDarkBlue</item>
+    </style>
+
+    <style name="BoxStyle" parent="AppTheme">
+        <item name="colorAccent">@color/colorDarkBlue</item>
+    </style>
+
+    <style name="et_style" parent="Base.V7.Widget.AppCompat.EditText">
+        <item name="android:colorAccent">@color/pigeonActionColor</item>
+        <item name="android:colorPrimary">@color/pigeonActionColor</item>
+        <item name="android:colorPrimaryDark">@color/pigeonActionColorDark</item>
+    </style>
+    <style name="alert_dialog" parent="android:Theme.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowBackground">@color/float_transparent</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.4</item>
+    </style>
+
+    <style name="dialog_blue_button" parent="android:Widget.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">31dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingLeft">21dp</item>
+        <item name="android:paddingRight">21dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+</resources>

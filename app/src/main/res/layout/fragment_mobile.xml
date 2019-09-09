@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/back_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin12"
+        android:padding="@dimen/margin12"
+        android:background="@drawable/mixin_ripple"
+        app:srcCompat="@drawable/ic_action_back"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/back_iv"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/mobile_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/landing_enter_mobile_number"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:orientation="horizontal">
+        <TextView
+            android:id="@+id/country_code_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_gravity="center_vertical"
+            android:text="+91" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:orientation="vertical">
+                <EditText
+                    android:id="@+id/mobile_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/btn_min_height"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="8dp"
+                    android:hint="@string/landing_enter_mobile_hint"
+                    android:maxLength="10"
+                    android:inputType="number"
+                    android:background="@null"
+                    android:textSize="16sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#222"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/enter_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:textSize="12sp"
+            app:layout_constraintHorizontal_bias="0.206"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mobile_et"/>
+    </LinearLayout>
+
+    <com.github.jorgecastilloprz.FABProgressCircle
+        android:id="@+id/mobile_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/mobile_keyboard"
+        android:layout_alignParentEnd="true"
+        android:visibility="visible"
+        app:arcColor="@color/pigeonActionColorDark"
+        app:layout_constraintBottom_toTopOf="@+id/mobile_keyboard"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:id="@+id/mobile_fab"
+            android:rotation="180"
+            android:visibility="invisible"
+            android:src="@drawable/ic_action_next"
+            app:backgroundTint="@color/pigeonActionColor"/>
+    </com.github.jorgecastilloprz.FABProgressCircle>
+
+    <com.pigeonmessenger.widget.Keyboard
+        android:id="@+id/mobile_keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:translationY="300dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <View
+        android:id="@+id/mobile_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:visibility="invisible"
+        android:focusable="true"/>
+</RelativeLayout>

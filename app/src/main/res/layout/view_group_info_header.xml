@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/divider"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginBottom="8dp"
+        android:id="@+id/group_info_not_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:text="@string/group_info_not_in"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/add_rl"
+        android:layout_marginBottom="0.5dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_contact_height"
+        android:background="@android:color/white"
+        android:foreground="?attr/selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/add_iv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:src="@drawable/ic_reg_addfriend"
+            android:tint="@color/black"
+            android:padding="1dp"
+            android:background="@drawable/view_group_info_iv_back"
+            tools:ignore="ContentDescription"/>
+
+        <TextView
+            android:id="@+id/add_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_toEndOf="@id/add_iv"
+            android:text="@string/group_add"
+            android:textColor="@color/black"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/invite_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_contact_height"
+        android:layout_marginBottom="0.5dp"
+        android:background="@android:color/white"
+        android:foreground="?attr/selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/invite_iv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:src="@drawable/ic_reg_hyperlink"
+            android:tint="@color/black"
+            android:padding="1dp"
+            android:background="@drawable/view_group_info_iv_back"
+            tools:ignore="ContentDescription"/>
+
+        <TextView
+            android:id="@+id/invite_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_toEndOf="@id/invite_iv"
+            android:text="@string/group_invite"
+            android:textColor="@color/black"/>
+    </RelativeLayout>
+</LinearLayout>

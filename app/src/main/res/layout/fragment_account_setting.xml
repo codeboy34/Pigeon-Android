@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".fragment.settings.AccountSettingFragment">
+
+
+    <com.pigeonmessenger.widget.CardTitleView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleView"
+        app:card_title="@string/account_setting"
+        app:card_title_elevation="3dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/sf_pro_light"
+        android:gravity="center_vertical"
+        android:text="@string/see_your_profile"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <com.pigeonmessenger.fragment.settings.SubSettingItem
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:id="@+id/profile_nobody"
+        app:sub_setting_title="@string/nobody" />
+
+    <com.pigeonmessenger.fragment.settings.SubSettingItem
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:id="@+id/profile_contacts"
+        app:sub_setting_title="@string/contacts" />
+
+    <com.pigeonmessenger.fragment.settings.SubSettingItem
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:id="@+id/profile_everybody"
+        app:sub_setting_title="@string/everybody" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/sf_pro_light"
+        android:gravity="center_vertical"
+        android:text="@string/see_your_last_seen"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <com.pigeonmessenger.fragment.settings.SubSettingItem
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingStart="16dp"
+        android:id="@+id/seen_nobody"
+        android:paddingEnd="16dp"
+        app:sub_setting_title="@string/nobody" />
+
+    <com.pigeonmessenger.fragment.settings.SubSettingItem
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingStart="16dp"
+        android:id="@+id/seen_contacts"
+        android:paddingEnd="16dp"
+        app:sub_setting_title="@string/contacts" />
+
+    <com.pigeonmessenger.fragment.settings.SubSettingItem
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:id="@+id/seen_everybody"
+        app:sub_setting_title="@string/everybody" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider" />
+
+    <TextView
+        android:id="@+id/block_bt"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/setting_back"
+        android:fontFamily="@font/sf_pro_light"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="@string/blocked_contacts"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:fontFamily="@font/sf_pro_light"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:background="@drawable/setting_back"
+        android:text="@string/logout"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:fontFamily="@font/sf_pro_light"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:background="@drawable/setting_back"
+        android:paddingEnd="16dp"
+        android:text="@string/delete_account"
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

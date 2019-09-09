@@ -1,0 +1,31 @@
+{
+  "buildFiles": [
+    "E:\\Android Official Projeccts\\pigeonnew\\app\\src\\main\\cpp\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "D:\\Android\\sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build \"E:\\Android Official Projeccts\\pigeonnew\\app\\.externalNativeBuild\\cmake\\debug\\armeabi-v7a\" --target clean"
+  ],
+  "libraries": {
+    "lib_opusenc-Debug-armeabi-v7a": {
+      "artifactName": "lib_opusenc",
+      "abi": "armeabi-v7a",
+      "output": "E:\\Android Official Projeccts\\pigeonnew\\app\\src\\main\\cpp\\opus\\lib\\armeabi-v7a\\libopusenc.a"
+    },
+    "lib_opus-Debug-armeabi-v7a": {
+      "artifactName": "lib_opus",
+      "abi": "armeabi-v7a",
+      "output": "E:\\Android Official Projeccts\\pigeonnew\\app\\src\\main\\cpp\\opus\\lib\\armeabi-v7a\\libopus.a"
+    },
+    "mixin-Debug-armeabi-v7a": {
+      "artifactName": "mixin",
+      "buildCommand": "D:\\Android\\sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build \"E:\\Android Official Projeccts\\pigeonnew\\app\\.externalNativeBuild\\cmake\\debug\\armeabi-v7a\" --target mixin",
+      "abi": "armeabi-v7a",
+      "output": "E:\\Android Official Projeccts\\pigeonnew\\app\\build\\intermediates\\cmake\\debug\\obj\\armeabi-v7a\\libmixin.so"
+    },
+    "lib_ogg-Debug-armeabi-v7a": {
+      "artifactName": "lib_ogg",
+      "abi": "armeabi-v7a",
+      "output": "E:\\Android Official Projeccts\\pigeonnew\\app\\src\\main\\cpp\\opus\\lib\\armeabi-v7a\\libogg.a"
+    }
+  }
+}

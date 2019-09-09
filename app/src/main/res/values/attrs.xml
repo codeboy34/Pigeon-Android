@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="customEdittext">
+        <attr name="icon" format="reference"/>
+        <attr name="hint" format="string"/>
+        <attr name="max_word" format="integer"/>
+        <attr name="input_type" format="string"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="CircleProgress">
+        <attr name="size" format="dimension" />
+        <attr name="progressWidth" format="dimension" />
+        <attr name="shadowColor" format="color" />
+        <attr name="progressColor" format="color" />
+        <attr name="progressValue" format="integer" />
+        <attr name="maxProgress" format="integer" />
+        <attr name="stringSize" format="dimension"/>
+        <attr name="border" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="Rotate3dAnimation">
+        <attr name="rollType" format="enum">
+            <enum name="x" value="0"/>
+            <enum name="y" value="1"/>
+            <enum name="z" value="2"/>
+        </attr>
+        <attr name="fromDeg" format="float" />
+        <attr name="toDeg" format="float" />
+        <attr name="RotatePivotX" format="fraction"/>
+        <attr name="RotatePivotY" format="fraction" />
+    </declare-styleable>
+
+    <declare-styleable name="CallButton">
+        <attr name="android:checkable" format="boolean"/>
+        <attr name="android:checked" format="boolean"/>
+        <attr name="bg_circle_checked" format="integer"/>
+        <attr name="bg_circle_unchecked" format="integer"/>
+        <attr name="ic_checked" format="integer"/>
+        <attr name="ic_unchecked" format="integer"/>
+        <attr name="android:text" format="string"/>
+    </declare-styleable>
+
+        <declare-styleable name="VerificationCodeView">
+            <attr name="vcv_count" format="integer" />
+            <attr name="vcv_spacing" format="dimension" />
+            <attr name="vcv_inputWidth" format="dimension" />
+            <attr name="vcv_inputHeight" format="dimension" />
+            <attr name="vcv_inputColor" format="color" />
+            <attr name="vcv_textSize" format="dimension" />
+            <attr name="vcv_textColor" format="color" />
+        </declare-styleable>
+
+    <declare-styleable name="MaterialSearchView">
+        <attr name="searchCloseIcon" format="integer" />
+        <attr name="searchBackIcon" format="integer" />
+        <attr name="searchBarHeight" format="dimension" />
+        <attr name="android:fitsSystemWindows"  />
+        <attr name="android:hint" />
+        <attr name="android:textColor" />
+        <attr name="android:textColorHint" />
+        <attr name="android:inputType" />
+    </declare-styleable>
+
+        <declare-styleable name="MessageLayout">
+            <attr name="max_width" format="dimension" />
+            <attr name="content_padding" format="dimension" />
+        </declare-styleable>
+
+    <declare-styleable name="PigeonCircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="border_overlay" format="boolean" />
+        <attr name="border_text_size" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="PlayView">
+        <attr name="bg" format="color"/>
+        <attr name="color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="ProfileInfoItem">
+        <attr name="item_title" format="string"/>
+        <attr name="item_icon" format="reference"/>
+        <attr name="tint_color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="SettingItem">
+        <attr name="setting_title" format="string"/>
+        <attr name="setting_icon" format="reference"/>
+        <attr name="setting_color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="CardTitleView">
+        <attr name="card_title" format="reference"/>
+        <attr name="card_title_elevation"  format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="SubSettingItem">
+        <attr name="sub_setting_title" format="string"/>
+    </declare-styleable>
+
+</resources>

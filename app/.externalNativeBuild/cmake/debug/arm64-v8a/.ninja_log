@@ -1,0 +1,49 @@
+# ninja log v5
+0	544	0	CMakeFiles/mixin.dir/audio.c.o	5e9e2fdb1fb58400
+544	1711	0	E:/Android Official Projeccts/pigeonnew/app/build/intermediates/cmake/debug/obj/arm64-v8a/libmixin.so	6523a1138f451288
+3	153	0	CMakeFiles/mixin.dir/audio.c.o	5e9e2fdb1fb58400
+153	591	0	E:/Android Official Projeccts/pigeonnew/app/build/intermediates/cmake/debug/obj/arm64-v8a/libmixin.so	6523a1138f451288
+2	159	0	CMakeFiles/mixin.dir/audio.c.o	5e9e2fdb1fb58400
+159	722	0	E:/Android Official Projeccts/pigeonnew/app/build/intermediates/cmake/debug/obj/arm64-v8a/libmixin.so	6523a1138f451288
+4	1236	0	CMakeFiles/mixin.dir/audio.c.o	5e9e2fdb1fb58400
+1237	2684	0	E:/Android Official Projeccts/pigeonnew/app/build/intermediates/cmake/debug/obj/arm64-v8a/libmixin.so	6523a1138f451288
+1	120	0	CMakeFiles/mixin.dir/audio.c.o	5e9e2fdb1fb58400
+120	421	0	E:/Android Official Projeccts/pigeonnew/app/build/intermediates/cmake/debug/obj/arm64-v8a/libmixin.so	6523a1138f451288
+11	639	0	CMakeFiles/mixin.dir/audio.c.o	5e9e2fdb1fb58400
+639	1639	0	E:/Android Official Projeccts/pigeonnew/app/build/intermediates/cmake/debug/obj/arm64-v8a/libmixin.so	6523a1138f451288
+2	549	0	CMakeFiles/mixin.dir/audio.c.o	5e9e2fdb1fb58400
+550	1952	0	E:/Android Official Projeccts/pigeonnew/app/build/intermediates/cmake/debug/obj/arm64-v8a/libmixin.so	6523a1138f451288
+2	492	0	CMakeFiles/mixin.dir/audio.c.o	5e9e2fdb1fb58400
+492	1729	0	E:/Android Official Projeccts/pigeonnew/app/build/intermediates/cmake/debug/obj/arm64-v8a/libmixin.so	6523a1138f451288
+3	418	0	CMakeFiles/mixin.dir/audio.c.o	5e9e2fdb1fb58400
+418	1462	0	E:/Android Official Projeccts/pigeonnew/app/build/intermediates/cmake/debug/obj/arm64-v8a/libmixin.so	6523a1138f451288
+3	714	0	CMakeFiles/mixin.dir/audio.c.o	5e9e2fdb1fb58400
+714	2436	0	E:/Android Official Projeccts/pigeonnew/app/build/intermediates/cmake/debug/obj/arm64-v8a/libmixin.so	6523a1138f451288
+3	585	0	CMakeFiles/mixin.dir/audio.c.o	5e9e2fdb1fb58400
+585	1968	0	E:/Android Official Projeccts/pigeonnew/app/build/intermediates/cmake/debug/obj/arm64-v8a/libmixin.so	6523a1138f451288
+2	378	0	CMakeFiles/mixin.dir/audio.c.o	5e9e2fdb1fb58400
+378	1515	0	E:/Android Official Projeccts/pigeonnew/app/build/intermediates/cmake/debug/obj/arm64-v8a/libmixin.so	6523a1138f451288
+3	693	0	CMakeFiles/mixin.dir/audio.c.o	5e9e2fdb1fb58400
+693	2017	0	E:/Android Official Projeccts/pigeonnew/app/build/intermediates/cmake/debug/obj/arm64-v8a/libmixin.so	6523a1138f451288
+2	705	0	CMakeFiles/mixin.dir/audio.c.o	5e9e2fdb1fb58400
+705	1748	0	E:/Android Official Projeccts/pigeonnew/app/build/intermediates/cmake/debug/obj/arm64-v8a/libmixin.so	6523a1138f451288
+2	759	0	CMakeFiles/mixin.dir/audio.c.o	5e9e2fdb1fb58400
+760	1808	0	E:/Android Official Projeccts/pigeonnew/app/build/intermediates/cmake/debug/obj/arm64-v8a/libmixin.so	6523a1138f451288
+2	580	0	CMakeFiles/mixin.dir/audio.c.o	5e9e2fdb1fb58400
+580	1615	0	E:/Android Official Projeccts/pigeonnew/app/build/intermediates/cmake/debug/obj/arm64-v8a/libmixin.so	6523a1138f451288
+2	291	0	CMakeFiles/mixin.dir/audio.c.o	5e9e2fdb1fb58400
+291	1096	0	E:/Android Official Projeccts/pigeonnew/app/build/intermediates/cmake/debug/obj/arm64-v8a/libmixin.so	6523a1138f451288
+1	867	0	CMakeFiles/mixin.dir/audio.c.o	5e9e2fdb1fb58400
+867	1666	0	E:/Android Official Projeccts/pigeonnew/app/build/intermediates/cmake/debug/obj/arm64-v8a/libmixin.so	6523a1138f451288
+1	556	0	CMakeFiles/mixin.dir/audio.c.o	5e9e2fdb1fb58400
+556	1028	0	E:/Android Official Projeccts/pigeonnew/app/build/intermediates/cmake/debug/obj/arm64-v8a/libmixin.so	6523a1138f451288
+1	557	0	CMakeFiles/mixin.dir/audio.c.o	5e9e2fdb1fb58400
+557	998	0	E:/Android Official Projeccts/pigeonnew/app/build/intermediates/cmake/debug/obj/arm64-v8a/libmixin.so	6523a1138f451288
+8	602	0	CMakeFiles/mixin.dir/audio.c.o	5e9e2fdb1fb58400
+602	2280	0	E:/Android Official Projeccts/pigeonnew/app/build/intermediates/cmake/debug/obj/arm64-v8a/libmixin.so	6523a1138f451288
+2	779	0	CMakeFiles/mixin.dir/audio.c.o	5e9e2fdb1fb58400
+779	2121	0	E:/Android Official Projeccts/pigeonnew/app/build/intermediates/cmake/debug/obj/arm64-v8a/libmixin.so	6523a1138f451288
+2	366	0	CMakeFiles/mixin.dir/audio.c.o	5e9e2fdb1fb58400
+366	1414	0	E:/Android Official Projeccts/pigeonnew/app/build/intermediates/cmake/debug/obj/arm64-v8a/libmixin.so	6523a1138f451288
+23	685	0	CMakeFiles/mixin.dir/audio.c.o	5e9e2fdb1fb58400
+686	2548	0	E:/Android Official Projeccts/pigeonnew/app/build/intermediates/cmake/debug/obj/arm64-v8a/libmixin.so	6523a1138f451288

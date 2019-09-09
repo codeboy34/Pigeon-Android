@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".TestActivity">
+
+    <com.pigeonmessenger.widget.PigeonCircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:border_width="2dp"
+        android:src="@drawable/avatar_contact"
+        app:border_color="@color/black"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,2 @@
+[1/2] Building C object CMakeFiles/mixin.dir/audio.c.o
+[2/2] Linking C shared library "E:\Android Official Projeccts\pigeonnew\app\build\intermediates\cmake\debug\obj\x86\libmixin.so"
