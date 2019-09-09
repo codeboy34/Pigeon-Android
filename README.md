@@ -37,5 +37,5 @@ Currently available on the Play store.
 <h2>Help</h2>
 For any help or query contact me on email.
   <h2>License</h2>
-  Copyright 2017-2020 Pigeon
+  Copyright 2017-2020 Pigeon<br/>
   Licensed under the GPLv3: http://www.gnu.org/licenses/gpl-3.0.html
