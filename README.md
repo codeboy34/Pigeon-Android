@@ -32,6 +32,8 @@ Currently available on the Play store.
   Contributions to Pigeon are both welcomed and appreciated.
   We use GitHub for bug tracking. Please search the existing issues for your bug and create a new one if the issue is not yet tracked!
   
+<h2>Help</h2>
+For any help or query contact me on email.
   <h2>License</h2>
   Copyright 2017-2020 Pigeon
   Licensed under the GPLv3: http://www.gnu.org/licenses/gpl-3.0.html
